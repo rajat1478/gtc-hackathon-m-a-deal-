@@ -1,0 +1,22 @@
+Problem Statement ::
+Tag Acquirer / Target in an M&A Deal
+.e.g.
+Microsoft purchased Github
+here Microsoft is Acquirer and Github is Target.
+
+Given ::
+Three files
+'Corpus.xlsx' 		contains raw articles (900 rows)
+'MnA_Training.xlsx' 		contains actual Training data (500 rows)
+'MnA_Test.xlsx' 		contains actual Test data (250 rows - to be tagged)
+This file is to be returned to the evaluators by filling tags
+---------------------------------------------------------------------------------
+
+system_id -> 	uid for each article
+title -> 		title of the article
+raw_article-> 	Raw html converted to text
+'Acq Final' and 'Tar Final' is actual Training  Tags for Acquirer / Target
+
+---------------------------------------------------------------------------------
+Hint :: use title or raw_article to derive features
+There will be always a fuzzy match (e.g. AT&T and AT&T Inc. is same , so Accuracy evaluation will take this into consideration)
