@@ -9,6 +9,7 @@ Created on Tue Oct 16 09:28:57 2018
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+%matplotlib
 
 #importing the given datasets
  
@@ -125,7 +126,7 @@ for i in new.iloc[:,0] :
 
 
 plt.scatter(bigdata['boolean'][0:30],bigdata['Acq Final'])
-
+plt.show()
 
 
 
